@@ -23,8 +23,7 @@ Insert the string 'taco' at the beginning of the `foods` array. */
 foods.unshift('taco'); 
 console.log('Exercise 3 results:', foods);
 
-/*
-Exercise 4: Access an array element
+/*Exercise 4: Access an array element
 
 1) Retrieve the 'pizza' string from the array based on its position (index) in
    the array.  
@@ -120,6 +119,7 @@ Note: A single number may meet more than one of the above rules. If it does,
          it should be placed in multiple arrays. For example, the number `15`
          will appear in the `fizz`, `buzz`, and `fizzbuzz` arrays.
 Complete Exercise 12 in the space below: */
+// https://www.w3schools.com/jsref/jsref_filter.asp
 
 const fizz = nums.filter((num) => num % 3 === 0);
 const buzz = nums.filter((num) => num % 5 === 0); 
@@ -129,6 +129,63 @@ console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
+
+/*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+Complete Exercise 13 in the space below: */
+
+// https://chatgpt.com/share/9177aa4a-20c4-480f-9427-bf0149c06ce3
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+const numList = numArrays [[numArrays.length - 1]]
+console.log('Exercise 13 result:', numList);
+
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+2) Assign it to a variable called `num`.
+Complete Exercise 14 in the space below:
+*/
+
+const num = numArrays[2][1]; 
+console.log('Exercise 14 result:', num);
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   2) Assign the sum to a variable called `total`.
+Hint: Be sure to declare and initialize the total variable before the iterations.
+Complete Exercise 15 in the space below:
+*/
+
+const total = ((numArrays[0][0]) + (numArrays[0][1]) + (numArrays[0][2]) + 
+            (numArrays[1][0]) + (numArrays[1][1]) + (numArrays[1][2]) + (numArrays[1][3]) +
+            (numArrays[2][0]) + (numArrays[2][1]) + (numArrays[3][0]) + (numArrays[3][1]) + 
+            (numArrays[3][2])); 
+
+            console.log('Exercise 15 result:\n', total);
+
+
+
+
+
+
+
+
 
 
 
